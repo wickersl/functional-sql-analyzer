@@ -1,0 +1,8 @@
+source https://www.nuget.org/api/v2
+
+framework: >= net461
+nuget FAKE
+nuget FSharp.Core
+nuget FSharp.Data
+nuget FSharp.Data.SqlClient 1.8.2
+nuget FSharp.NET.Sdk
