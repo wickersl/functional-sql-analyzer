@@ -41,15 +41,15 @@ module TypeSystem =
 
     //------------------------------------
 
+    type ConnectionString = string
+
     type Analyzer = {
-        run: int -> Result
+        run: ConnectionString -> Result
         friendlyName: string
     }
 
-    type ConnectionString = string
 
     //consider making record type
     type RunnableAnalyzers = {
-        databaseConnectionString: string
         analyzers: seq<Analyzer>
     }
